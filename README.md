@@ -2,9 +2,11 @@
 
 Salvage files from corrupted ext2 file system
 
+
 ### usage
 
 _perl ./recovery.pl -d disk-path -t file-type -s block-size -p recover-path_
+
 
 ### parameters
 
@@ -18,21 +20,23 @@ _perl ./recovery.pl -d disk-path -t file-type -s block-size -p recover-path_
 
 `-p:` recover_path, the path where recovered file to put
 
-### trial steps
 
+### trial steps
+```
 1. prepare a LUN (virtual disk)
 
-2. format the LUN with ext2 file-system
+2. format the LUN with ext2 filesystem
 
 3. mount the formated file-system
 
-4. create/copy some test file into the file-system
+4. create/copy some test file into the filesystem
 
 5. remove the test files
 
-6. umount the file-system
+6. umount the filesystem
 
 7. corrupt the superblock and other metatdata of the filesystem by 'dd' command
 
 8. use salvage.pl to salvage the test files
+```
 
