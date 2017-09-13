@@ -5,7 +5,7 @@ Salvage files from corrupted ext2 file system
 
 **_usage_**
 ```
-_perl salvage.pl -d disk-path -t file-type -s block-size -p recover-path_
+perl salvage.pl -d disk-path -t file-type -s block-size -p recover-path
 ```
 
 **_parameters_**
