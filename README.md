@@ -3,12 +3,12 @@
 Salvage files from corrupted ext2 file system
 
 
-### usage
+**_usage_**
 
 _perl ./recovery.pl -d disk-path -t file-type -s block-size -p recover-path_
 
 
-### parameters
+**_parameters_**
 
 `-h:` help 
 
@@ -21,7 +21,7 @@ _perl ./recovery.pl -d disk-path -t file-type -s block-size -p recover-path_
 `-p:` recover_path, the path where recovered file to put
 
 
-### trial steps
+**_trial steps_**
 ```
 1. prepare a LUN (virtual disk)
 
