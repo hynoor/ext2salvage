@@ -2,7 +2,6 @@
 
 Salvage files from either corrupted ext2 file system or accidental deletion
 
-
 **_usage_**
 ```
 perl salvage.pl -d disk-path -t file-type -s block-size -p recover-path
@@ -20,7 +19,8 @@ perl salvage.pl -d disk-path -t file-type -s block-size -p recover-path
 
 `-p:` recover_path, the path where recovered file to put
 
-**_example**
+**_example_**
+
 Salvage all pdf, mp4 and txt files which were deleted accidentally
 ```
 $ perl -d /dev/sdc1 -t pdf,mp4,txt -p ./refund/
